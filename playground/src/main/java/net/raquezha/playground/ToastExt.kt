@@ -8,16 +8,12 @@ import android.widget.Toast
  * Created by Victor on 2017/8/18. (ง •̀_•́)ง
  */
 private inline val ctx: Context?
-    get() = Playground.app.applicationContext
+    get() = checkNotNull(Playground.app) { throw NullPointerException("You should set `Playground.with(app)` in your Application")}
 
 private var toast: Toast? = null
 
 @SuppressLint("ShowToast")
 fun toast(msg: Any?, isShort: Boolean = true) {
-
-    checkNotNull(ctx) {
-        throw NullPointerException("Context is null, you should set Playground.with(context) in your Application")
-    }
 
     msg?.let {
         if (toast == null) {

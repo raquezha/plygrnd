@@ -41,17 +41,21 @@ val listener = object : OnKeyboardVisibilityListener {
         ...
     }
 }
+
 activity.setKeyboardVisibilityListener(listener)
+...
 ```
 
 ### LogExt
 
 ```kotlin
 log("my log message")
+...
 ```
 
 ### ToastExt
 
 ```kotlin
 toast("my log message")
+...
 ```

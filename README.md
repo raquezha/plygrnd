@@ -1,18 +1,6 @@
 # Plygrnd (Kotlin)
 just my collection of android tools written in kotlin
 
-## Usage
-
-initialize this in your application
-```kotlin
-Playground.with(application)
-```
-or you can add custom tag name for logs by default it is set to **Playground**
-```kotlin
-Playground.with(application, "MyCustomTagName")
-```
-
-
 ## Gradle
 
 ```groovy
@@ -31,7 +19,19 @@ dependencies {
     implementation 'com.github.raquezha:plygrnd:/releases/latest'
 }
 ```
-## Keyboard Visibility Listener
+
+## Usage
+
+initialize this in your application
+```kotlin
+Playground.with(application)
+```
+or you can add custom tag name for logs by default it is set to **Playground**
+```kotlin
+Playground.with(application, "MyCustomTagName")
+```
+
+### Keyboard Visibility Listener
 
 to use it first declare a listener
 ```kotlin
@@ -42,31 +42,31 @@ val listener = object : OnKeyboardVisibilityListener {
 }
 ```
 
-### View
+#### View
 
 ```kotlin
 view.setKeyboardVisibilityListener(listener)
 ```
 
-### Activity
+#### Activity
 
 ```kotlin
 activity.setKeyboardVisibilityListener(listener)
 ```
-### Fragment
+#### Fragment
 
 ```kotlin
 fragment.setKeyboardVisibilityListener(listener)
 ```
 
 
-## LogExt
+### LogExt
 
 ```kotlin
 log("my log message")
 ```
 
-## ToastExt
+### ToastExt
 
 ```kotlin
 toast("my log message")

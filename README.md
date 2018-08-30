@@ -40,10 +40,7 @@ val listener = object : OnKeyboardVisibilityListener {
         ...
     }
 }
-```
-
-then you can use it via activity
-```kotlin
+// then you can use it via activity
 activity.setKeyboardVisibilityListener(listener)
 ```
 

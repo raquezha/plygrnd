@@ -42,28 +42,30 @@ val listener = object : OnKeyboardVisibilityListener {
 }
 ```
 
-
 ### View
+
 ```kotlin
 view.setKeyboardVisibilityListener(listener)
 ```
 
 ### Activity
+
 ```kotlin
 activity.setKeyboardVisibilityListener(listener)
 ```
 ### Fragment
+
 ```kotlin
 fragment.setKeyboardVisibilityListener(listener)
 ```
 
-### LogExt
+## LogExt
 
 ```kotlin
 log("my log message")
 ```
 
-### ToastExt
+## ToastExt
 
 ```kotlin
 toast("my log message")

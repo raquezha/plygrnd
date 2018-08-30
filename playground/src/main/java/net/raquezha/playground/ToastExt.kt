@@ -4,9 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.widget.Toast
 
-/**
- * Created by Victor on 2017/8/18. (ง •̀_•́)ง
- */
 private inline val ctx: Context?
     get() = checkNotNull(Playground.app) { throw NullPointerException("You should set `Playground.with(app)` in your Application")}
 

@@ -41,7 +41,6 @@ val listener = object : OnKeyboardVisibilityListener {
         ...
     }
 }
-
 activity.setKeyboardVisibilityListener(listener)
 ```
 

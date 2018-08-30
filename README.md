@@ -59,6 +59,7 @@ activity.setKeyboardVisibilityListener(listener)
 fragment.setKeyboardVisibilityListener(listener)
 ```
 
+
 ## LogExt
 
 ```kotlin

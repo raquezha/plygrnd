@@ -42,23 +42,10 @@ val listener = object : OnKeyboardVisibilityListener {
 }
 ```
 
-#### View
-
-```kotlin
-view.setKeyboardVisibilityListener(listener)
-```
-
-#### Activity
-
+then you can use it via activity
 ```kotlin
 activity.setKeyboardVisibilityListener(listener)
 ```
-#### Fragment
-
-```kotlin
-fragment.setKeyboardVisibilityListener(listener)
-```
-
 
 ### LogExt
 

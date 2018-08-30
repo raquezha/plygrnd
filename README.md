@@ -33,16 +33,15 @@ Playground.with(application, "MyCustomTagName")
 
 ### Keyboard Visibility Listener
 
+to use it first declare a listener, then you can use it via activity
 
 ```kotlin
-//to use it first declare a listener
 val listener = object : OnKeyboardVisibilityListener {
     override fun onVisibilityChanged(visible: Boolean) {
         ...
     }
 }
 
-// then you can use it via activity
 activity.setKeyboardVisibilityListener(listener)
 ```
 

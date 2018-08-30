@@ -17,6 +17,12 @@ interface OnKeyboardVisibilityListener {
     fun onVisibilityChanged(visible: kotlin.Boolean)
 }
 
+fun Activity.setKeyboardVisibilityListener(onKeyboardVisibilityListener: OnKeyboardVisibilityListener) {
+    val parentView: View = findViewById<ViewGroup>(android.R.id.content).getChildAt(0)
+    parentView.viewTreeObserver.addOnGlobalLayoutListener {
+        visibilityListener(parentView, onKeyboardVisibilityListener)
+    }
+}
 
 fun AppCompatActivity.setKeyboardVisibilityListener(onKeyboardVisibilityListener: OnKeyboardVisibilityListener) {
     val parentView: View = findViewById<ViewGroup>(android.R.id.content).getChildAt(0)

@@ -1,8 +1,9 @@
-package net.raquezha.playground
+package net.raquezha.playground.extensions
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.widget.Toast
+import net.raquezha.playground.Playground
 
 private inline val ctx: Context?
     get() = checkNotNull(Playground.app) { throw NullPointerException("You should set `Playground.with(app)` in your Application")}

@@ -1,6 +1,7 @@
-package net.raquezha.playground
+package net.raquezha.playground.extensions
 
 import android.util.Log
+import net.raquezha.playground.Playground
 
 inline val tag: String?
     get() = Playground.tag

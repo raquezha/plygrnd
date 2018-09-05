@@ -17,6 +17,20 @@ fun Activity.setKeyboardVisibilityListener(onKeyboardVisibilityListener: OnKeybo
     }
 }
 
+
+fun Activity.hideKeyboard() {
+    val rootView = window.decorView.rootView
+    val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    inputMethodManager.hideSoftInputFromWindow(rootView.windowToken, 0)
+}
+
+fun Activity.showKeyboard() {
+    val rootView = window.decorView.rootView
+    val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    inputMethodManager.showSoftInput(rootView, InputMethodManager.SHOW_IMPLICIT)
+    window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
+}
+
 fun View.hideKeyboard() {
     val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     inputMethodManager.hideSoftInputFromWindow(this.windowToken, 0)
@@ -28,3 +42,4 @@ fun View.showKeyboard() {
     inputMethodManager.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
     (context as Activity).window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
 }
+

@@ -1,6 +1,5 @@
 # Plygrnd (Kotlin)
 just my collection of android tools written in kotlin
-this project uses androidx
 
 ## Gradle
 
@@ -19,6 +18,14 @@ allprojects {
 dependencies {
     implementation 'com.github.raquezha:plygrnd:/releases/latest'
 }
+```
+
+## AndroidX
+
+this project uses androidx; add the following lines to your gradle.properties file:
+```groovy
+android.useAndroidX=true
+android.enableJetifier=true
 ```
 
 ## Usage

@@ -1,5 +1,6 @@
 # Plygrnd (Kotlin)
 just my collection of android tools written in kotlin
+this project uses androidx
 
 ## Gradle
 

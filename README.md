@@ -45,6 +45,18 @@ val listener = object : OnKeyboardVisibilityListener {
 activity.setKeyboardVisibilityListener(listener)
 ```
 
+### Show/Hide Keyboard
+
+just call 'showKeyboard()' function anywhere inside your  Activity or View
+
+```kotlin
+showKeyboard()
+```
+
+```kotlin
+hideKeyboard()
+```
+
 ### LogExt
 
 ```kotlin

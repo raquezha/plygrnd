@@ -69,7 +69,10 @@ hideKeyboard()
 
 ```kotlin
 log("my log message")
+// or you manually set the TAG
+log("my log message", "MYTAG")
 ```
+
 
 ### ToastExt
 

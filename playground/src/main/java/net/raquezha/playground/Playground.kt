@@ -7,8 +7,10 @@ object Playground {
     var tag: String = this::class.java.simpleName
 
     fun with(app: Application, tag: String = this::class.java.simpleName) {
-        this.app = app
-        this.tag = tag
+        synchronized(app) {
+            this.app = app
+            this.tag = tag
+        }
     }
 
 }

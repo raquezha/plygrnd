@@ -6,14 +6,14 @@ import net.raquezha.playground.Playground
 inline val tag: String?
     get() = Playground.tag
 
-fun Any.log(log: String) = Log.e(tag, log)
+fun Any.log(log: String, TAG: String = tag!!) = Log.e(TAG, log)
 
-fun Any.logV(log: String) = Log.v(tag, log)
+fun Any.logV(log: String, TAG: String = tag!!) = Log.e(TAG, log)
 
-fun Any.logE(log: String) = Log.e(tag, log)
+fun Any.logE(log: String, TAG: String = tag!!) = Log.e(TAG, log)
 
-fun Any.logD(log: String) = Log.d(tag, log)
+fun Any.logD(log: String, TAG: String = tag!!) = Log.e(TAG, log)
 
-fun Any.logI(log: String) = Log.i(tag, log)
+fun Any.logI(log: String, TAG: String = tag!!) = Log.e(TAG, log)
 
-fun Any.logW(log: String) = Log.w(tag, log)
+fun Any.logW(log: String, TAG: String = tag!!) = Log.e(TAG, log)
